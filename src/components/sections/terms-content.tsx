@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function TermsContent() {
   return (
@@ -36,8 +37,8 @@ export function TermsContent() {
                 Ці умови використання (далі — «Умови») є публічною офертою
                 відповідно до ст. 633 Цивільного кодексу України та
                 регламентують порядок надання послуг через вебсайт
-                https://masc.pp.ua та Telegram-боти https://t.me/MASC_UA_bot,
-                https://t.me/MASC_IT_bot.
+                https://masc-front.vercel.app та Telegram-боти
+                https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot.
               </p>
               <p className="text-muted-foreground">
                 Надавачем послуг виступає фізична особа-підприємець Сажин
@@ -239,9 +240,12 @@ export function TermsContent() {
                     <strong>7.1.</strong> Обробка, зберігання та захист
                     персональних даних Користувача здійснюється відповідно до
                     Політики конфіденційності, розміщеної за посиланням:{" "}
-                    <a href="/privacy" className="text-primary hover:underline">
-                      https://masc.pp.ua/privacy
-                    </a>
+                    <Link
+                      href="/privacy"
+                      className="text-primary hover:underline"
+                    >
+                      https://masc-front.vercel.app/privacy
+                    </Link>
                     .
                   </p>
                   <p>
@@ -279,9 +283,12 @@ export function TermsContent() {
                     <strong>9.1.</strong> Ці умови можуть бути змінені
                     Виконавцем без попереднього повідомлення. Актуальна версія
                     завжди доступна за адресою:{" "}
-                    <a href="/terms" className="text-primary hover:underline">
-                      https://masc.pp.ua/terms
-                    </a>
+                    <Link
+                      href="/terms"
+                      className="text-primary hover:underline"
+                    >
+                      https://masc-front.vercel.app/terms
+                    </Link>
                   </p>
                   <p>
                     <strong>9.2.</strong> Факт оплати послуги вважається повним

@@ -35,7 +35,7 @@ export function PrivacyContent() {
               <p className="text-muted-foreground">
                 Ця політика конфіденційності (далі — «Політика») визначає
                 порядок обробки та захисту персональних даних користувачів
-                вебсайту https://masc.pp.ua та Telegram-ботів
+                вебсайту https://masc-front.vercel.app та Telegram-ботів
                 https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot, які
                 надаються фізичною особою-підприємцем Сажиним Євгенієм
                 Ігоровичем (надалі — «Виконавець»).
