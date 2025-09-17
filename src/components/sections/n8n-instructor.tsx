@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 const achievements = [
   "Єдиний в Україні сертифікований партнер N8N",
@@ -46,7 +47,12 @@ export function N8NInstructor() {
                     className="flex-shrink-0"
                   >
                     <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary/60 rounded-full flex items-center justify-center text-4xl font-bold text-primary-foreground">
-                      СД
+                      <Image
+                        src="/Stepan.png"
+                        alt="Степан Доктор"
+                        width={300}
+                        height={300}
+                      />
                     </div>
                   </motion.div>
 

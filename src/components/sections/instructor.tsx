@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const achievements = [
   "TOP Rated-фрилансер",
@@ -46,7 +47,12 @@ export function Instructor() {
                     className="flex-shrink-0"
                   >
                     <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary/60 rounded-full flex items-center justify-center text-4xl font-bold text-primary-foreground">
-                      МС
+                      <Image
+                        src="/Maksym.png"
+                        alt="Максим Слободянюк"
+                        width={300}
+                        height={300}
+                      />
                     </div>
                   </motion.div>
 
