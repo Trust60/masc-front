@@ -12,7 +12,7 @@ const achievements = [
 
 export function AIExpertInstructor() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-muted/30 bg-texture-waves">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}

@@ -31,11 +31,11 @@ export function PrivacyContent() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="prose prose-lg max-w-none"
           >
-            <div className="bg-muted/30 rounded-lg p-6 mb-8">
+            <div className="bg-muted/30 bg-texture-grid rounded-lg p-6 mb-8">
               <p className="text-muted-foreground">
                 Ця політика конфіденційності (далі — «Політика») визначає
                 порядок обробки та захисту персональних даних користувачів
-                вебсайту https://masc-front.vercel.app та Telegram-ботів
+                вебсайту https://masc-it.vercel.app та Telegram-ботів
                 https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot, які
                 надаються фізичною особою-підприємцем Сажиним Євгенієм
                 Ігоровичем (надалі — «Виконавець»).

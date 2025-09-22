@@ -32,12 +32,12 @@ export function TermsContent() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="prose prose-lg max-w-none"
           >
-            <div className="bg-muted/30 rounded-lg p-6 mb-8">
+            <div className="bg-muted/30 bg-texture-grid rounded-lg p-6 mb-8">
               <p className="text-muted-foreground mb-4">
                 Ці умови використання (далі — «Умови») є публічною офертою
                 відповідно до ст. 633 Цивільного кодексу України та
                 регламентують порядок надання послуг через вебсайт
-                https://masc-front.vercel.app та Telegram-боти
+                https://masc-it.vercel.app та Telegram-боти
                 https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot.
               </p>
               <p className="text-muted-foreground">
@@ -244,7 +244,7 @@ export function TermsContent() {
                       href="/privacy"
                       className="text-primary hover:underline"
                     >
-                      https://masc-front.vercel.app/privacy
+                      https://masc-it.vercel.app/privacy
                     </Link>
                     .
                   </p>
@@ -287,7 +287,7 @@ export function TermsContent() {
                       href="/terms"
                       className="text-primary hover:underline"
                     >
-                      https://masc-front.vercel.app/terms
+                      https://masc-it.vercel.app/terms
                     </Link>
                   </p>
                   <p>

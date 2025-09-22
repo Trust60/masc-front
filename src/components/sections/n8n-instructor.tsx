@@ -15,7 +15,7 @@ const achievements = [
 
 export function N8NInstructor() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-muted/30 bg-texture-hexagon">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}

@@ -66,10 +66,11 @@ export function Footer() {
             viewport={{ once: true }}
           >
             <h3 className="font-semibold text-foreground mb-4">Контакти</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p>📧 info@masc.pp.ua</p>
-              <p>📱 +380 (XX) XXX-XX-XX</p>
-              <p>🌐 masc.pp.ua</p>
+            <div className="space-y-2 text-muted-foreground flex flex-col">
+              <a href="mailto:masc.edu.it@gmail.com">
+                📧 masc.edu.it@gmail.com
+              </a>
+              <a href="tel:+380665752066">📱 +380 (66) 575-20-66</a>
             </div>
           </motion.div>
         </div>
