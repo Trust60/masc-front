@@ -195,7 +195,7 @@ export function PrivacyContent() {
                     може звернутися до Виконавця за адресою електронної пошти:{" "}
                     <a
                       href="mailto:info@masc.pp.ua"
-                      className="text-primary hover:underline"
+                      className="text-gradient-orange hover:underline"
                     >
                       info@masc.pp.ua
                     </a>

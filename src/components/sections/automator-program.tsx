@@ -86,7 +86,7 @@ export function AutomatorProgram() {
                         viewport={{ once: true }}
                         className="flex items-start gap-2 text-muted-foreground"
                       >
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-gradient-orange mt-1">•</span>
                         <span>{item}</span>
                       </motion.li>
                     ))}

@@ -47,7 +47,7 @@ export function AIExpertProgram() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-4xl sm:text-5xl font-bold text-primary mb-4"
+                className="text-4xl sm:text-5xl font-bold text-gradient-orange mb-4"
               >
                 {stat.number}
               </motion.div>

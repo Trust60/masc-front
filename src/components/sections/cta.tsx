@@ -28,7 +28,8 @@ export function CTA() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-semibold"
+              variant="outline"
+              className="font-semibold text-black"
             >
               Зареєструватися на консультацію
             </Button>

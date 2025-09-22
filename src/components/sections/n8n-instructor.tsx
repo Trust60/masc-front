@@ -46,7 +46,7 @@ export function N8NInstructor() {
                     whileHover={{ scale: 1.05 }}
                     className="flex-shrink-0"
                   >
-                    <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary/60 rounded-full flex items-center justify-center text-4xl font-bold text-primary-foreground">
+                    <div className="w-32 h-32 bg-gradient-orange rounded-full flex items-center justify-center text-4xl font-bold text-white">
                       <Image
                         src="/Stepan.png"
                         alt="Степан Доктор"
@@ -84,7 +84,7 @@ export function N8NInstructor() {
                           viewport={{ once: true }}
                           className="flex items-center gap-2 text-muted-foreground"
                         >
-                          <span className="text-primary">✓</span>
+                          <span className="text-gradient-orange">✓</span>
                           <span>{achievement}</span>
                         </motion.div>
                       ))}

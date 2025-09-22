@@ -109,7 +109,7 @@ export function Courses() {
                 </CardContent>
 
                 <CardFooter className="flex flex-col gap-3">
-                  <div className="text-lg font-semibold text-primary">
+                  <div className="text-lg font-semibold text-gradient-orange">
                     {course.price}
                   </div>
                   <Link href={course.link} className="w-full">

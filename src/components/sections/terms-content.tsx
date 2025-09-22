@@ -242,7 +242,7 @@ export function TermsContent() {
                     Політики конфіденційності, розміщеної за посиланням:{" "}
                     <Link
                       href="/privacy"
-                      className="text-primary hover:underline"
+                      className="text-gradient-orange hover:underline"
                     >
                       https://masc-it.vercel.app/privacy
                     </Link>
@@ -285,7 +285,7 @@ export function TermsContent() {
                     завжди доступна за адресою:{" "}
                     <Link
                       href="/terms"
-                      className="text-primary hover:underline"
+                      className="text-gradient-orange hover:underline"
                     >
                       https://masc-it.vercel.app/terms
                     </Link>

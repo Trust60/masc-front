@@ -98,7 +98,7 @@ export function N8NProgram() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl sm:text-4xl font-bold text-gradient-orange mb-2">
                 {stat.number}
               </div>
               <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -134,7 +134,7 @@ export function N8NProgram() {
                         viewport={{ once: true }}
                         className="flex items-start gap-2 text-muted-foreground"
                       >
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-gradient-orange mt-1">•</span>
                         <span>{item}</span>
                       </motion.li>
                     ))}

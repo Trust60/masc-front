@@ -47,7 +47,7 @@ export function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+              className="text-gradient-orange"
             >
               майбутнє
             </motion.span>{" "}
@@ -109,7 +109,7 @@ export function Hero() {
                 transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">
+                <div className="text-2xl sm:text-3xl font-bold text-gradient-orange mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm text-muted-foreground">

@@ -85,7 +85,7 @@ export function AutomatorPricing() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium">
+                  <span className="bg-gradient-orange text-white px-4 py-2 rounded-full text-sm font-medium">
                     Популярний
                   </span>
                 </div>
@@ -99,7 +99,7 @@ export function AutomatorPricing() {
                 <CardHeader className="text-center pb-4">
                   <CardTitle className="text-2xl">{plan.name}</CardTitle>
                   <div className="mt-4">
-                    <div className="text-3xl font-bold text-primary">
+                    <div className="text-3xl font-bold text-gradient-orange">
                       {plan.price}
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -122,7 +122,7 @@ export function AutomatorPricing() {
                         viewport={{ once: true }}
                         className="flex items-start gap-2 text-sm text-muted-foreground"
                       >
-                        <span className="text-primary mt-1">✓</span>
+                        <span className="text-gradient-orange mt-1">✓</span>
                         <span>{feature}</span>
                       </motion.li>
                     ))}

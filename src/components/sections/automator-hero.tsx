@@ -151,7 +151,7 @@ export function AutomatorHero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+              className="text-gradient-orange"
             >
               Маркетингу
             </motion.span>
