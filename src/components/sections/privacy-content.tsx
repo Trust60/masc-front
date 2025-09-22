@@ -194,10 +194,10 @@ export function PrivacyContent() {
                     <strong>6.2.</strong> Для реалізації своїх прав Користувач
                     може звернутися до Виконавця за адресою електронної пошти:{" "}
                     <a
-                      href="mailto:info@masc.pp.ua"
+                      href="mailto:masc.edu.it@gmail.com"
                       className="text-gradient-orange hover:underline"
                     >
-                      info@masc.pp.ua
+                      masc.edu.it@gmail.com
                     </a>
                     .
                   </p>
