@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 export function AutomatorCTA() {
   return (
@@ -32,9 +33,15 @@ export function AutomatorCTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Button size="lg" className="px-8 py-4 text-lg">
-              Зареєструватися на консультацію
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button size="lg" className="px-8 py-4 text-lg">
+                  Зареєструватися на консультацію
+                </Button>
+              }
+              courseType="ma"
+              buttonText="Зареєструватися на консультацію"
+            />
           </motion.div>
         </div>
       </div>

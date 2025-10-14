@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 const pricingPlans = [
   {
@@ -130,12 +131,18 @@ export function AutomatorPricing() {
                 </CardContent>
 
                 <CardFooter>
-                  <Button
-                    className="w-full"
-                    variant={plan.popular ? "default" : "outline"}
-                  >
-                    Детальніше
-                  </Button>
+                  <ContactFormDialog
+                    trigger={
+                      <Button
+                        className="w-full"
+                        variant={plan.popular ? "default" : "outline"}
+                      >
+                        Детальніше
+                      </Button>
+                    }
+                    courseType="ma"
+                    buttonText="Детальніше"
+                  />
                 </CardFooter>
               </Card>
             </motion.div>

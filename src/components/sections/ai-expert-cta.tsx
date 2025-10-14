@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 export function AIExpertCTA() {
   return (
@@ -32,9 +33,15 @@ export function AIExpertCTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Button size="lg" className="px-8 py-4 text-lg">
-              ХОЧУ НАВЧАТИСЬ!
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button size="lg" className="px-8 py-4 text-lg">
+                  ХОЧУ НАВЧАТИСЬ!
+                </Button>
+              }
+              courseType="ai"
+              buttonText="ХОЧУ НАВЧАТИСЬ!"
+            />
           </motion.div>
         </div>
       </div>

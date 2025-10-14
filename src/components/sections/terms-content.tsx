@@ -41,8 +41,8 @@ export function TermsContent() {
                 https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot.
               </p>
               <p className="text-muted-foreground">
-                Надавачем послуг виступає фізична особа-підприємець Сажин
-                Євгеній Ігорович (РНОКПП: 3259904474), надалі — «Виконавець».
+                Надавачем послуг виступає фізична особа-підприємець Ковальчук
+                Ярослава Василівна (ЄДРПОУ: 3451315569), надалі — «Виконавець».
               </p>
             </div>
 
@@ -123,8 +123,21 @@ export function TermsContent() {
                   <p>
                     <strong>3.2.</strong> Повернення коштів можливе протягом 7
                     (семи) календарних днів з моменту оплати лише за письмовим
-                    зверненням на адресу електронної пошти:
-                    masc.edu.it@gmail.com.
+                    зверненням на адресу електронної пошти:{" "}
+                    <a
+                      href="mailto:masc.edu.it@gmail.com"
+                      className="text-gradient-orange hover:underline"
+                    >
+                      masc.edu.it@gmail.com
+                    </a>{" "}
+                    або за телефоном:{" "}
+                    <a
+                      href="tel:+380987001039"
+                      className="text-gradient-orange hover:underline"
+                    >
+                      +38 (098) 700-10-39
+                    </a>
+                    .
                   </p>
                   <p>
                     <strong>3.3.</strong> Для здійснення повернення Користувач
@@ -241,12 +254,14 @@ export function TermsContent() {
                     <strong>7.1.</strong> Обробка, зберігання та захист
                     персональних даних Користувача здійснюється відповідно до
                     Політики конфіденційності, розміщеної за посиланням:{" "}
-                    <Link
-                      href="/privacy"
+                    <a
+                      href="https://masc-it.vercel.app/privacy"
                       className="text-gradient-orange hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       https://masc-it.vercel.app/privacy
-                    </Link>
+                    </a>
                     .
                   </p>
                   <p>
@@ -284,12 +299,14 @@ export function TermsContent() {
                     <strong>9.1.</strong> Ці умови можуть бути змінені
                     Виконавцем без попереднього повідомлення. Актуальна версія
                     завжди доступна за адресою:{" "}
-                    <Link
-                      href="/terms"
+                    <a
+                      href="https://masc-it.vercel.app/terms"
                       className="text-gradient-orange hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       https://masc-it.vercel.app/terms
-                    </Link>
+                    </a>
                   </p>
                   <p>
                     <strong>9.2.</strong> Факт оплати послуги вважається повним
@@ -334,7 +351,13 @@ export function TermsContent() {
               {/* Footer */}
               <div className="mt-12 pt-8 border-t border-border">
                 <p className="text-sm text-muted-foreground text-center">
-                  Останнє оновлення: 21 квітня 2025 року
+                  Останнє оновлення:{" "}
+                  {new Date().toLocaleDateString("uk-UA", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}{" "}
+                  року
                 </p>
               </div>
             </div>

@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 const pricingPlans = [
   {
@@ -128,12 +129,18 @@ export function N8NPricing() {
                 </CardContent>
 
                 <CardFooter>
-                  <Button
-                    className="w-full"
-                    variant={plan.popular ? "default" : "outline"}
-                  >
-                    Обрати тариф
-                  </Button>
+                  <ContactFormDialog
+                    trigger={
+                      <Button
+                        className="w-full"
+                        variant={plan.popular ? "default" : "outline"}
+                      >
+                        Обрати тариф
+                      </Button>
+                    }
+                    courseType="n8n"
+                    buttonText="Обрати тариф"
+                  />
                 </CardFooter>
               </Card>
             </motion.div>

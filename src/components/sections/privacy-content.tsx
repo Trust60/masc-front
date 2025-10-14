@@ -35,10 +35,9 @@ export function PrivacyContent() {
               <p className="text-muted-foreground">
                 Ця політика конфіденційності (далі — «Політика») визначає
                 порядок обробки та захисту персональних даних користувачів
-                вебсайту https://masc-it.vercel.app та Telegram-ботів
-                https://t.me/MASC_UA_bot, https://t.me/MASC_IT_bot, які
-                надаються фізичною особою-підприємцем Сажиним Євгенієм
-                Ігоровичем (надалі — «Виконавець»).
+                вебсайту https://masc-it.vercel.app, які надаються фізичною
+                особою-підприємцем Ковальчук Ярославою Василівною (ЄДРПОУ:
+                3451315569) (надалі — «Виконавець»).
               </p>
             </div>
 
@@ -276,7 +275,13 @@ export function PrivacyContent() {
               {/* Footer */}
               <div className="mt-12 pt-8 border-t border-border">
                 <p className="text-sm text-muted-foreground text-center">
-                  Останнє оновлення: 21 квітня 2025 року
+                  Останнє оновлення:{" "}
+                  {new Date().toLocaleDateString("uk-UA", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}{" "}
+                  року
                 </p>
               </div>
             </div>

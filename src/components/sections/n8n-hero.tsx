@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 const scrollToProgram = () => {
   const programSection = document.getElementById("program");
@@ -171,9 +172,18 @@ export function N8NHero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
-            <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-lg">
-              Записатися на курс
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto px-8 py-4 text-lg"
+                >
+                  Записатися на курс
+                </Button>
+              }
+              courseType="n8n"
+              buttonText="Записатися на курс"
+            />
             <Button
               variant="outline"
               size="lg"

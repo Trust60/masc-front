@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "../ui/contact-form-dialog";
 
 export function CTA() {
   return (
@@ -26,13 +27,19 @@ export function CTA() {
           </p>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              size="lg"
-              variant="outline"
-              className="font-semibold text-black"
-            >
-              Зареєструватися на консультацію
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="font-semibold text-black"
+                >
+                  Зареєструватися на консультацію
+                </Button>
+              }
+              courseType="ma"
+              buttonText="Зареєструватися на консультацію"
+            />
           </motion.div>
         </motion.div>
       </div>

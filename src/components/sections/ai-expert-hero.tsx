@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 
 export function AIExpertHero() {
   return (
@@ -172,9 +173,18 @@ export function AIExpertHero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-12"
           >
-            <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-lg">
-              РЕЄСТРАЦІЯ
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto px-8 py-4 text-lg"
+                >
+                  РЕЄСТРАЦІЯ
+                </Button>
+              }
+              courseType="ai"
+              buttonText="РЕЄСТРАЦІЯ"
+            />
           </motion.div>
 
           {/* Mobile feature cards */}
