@@ -79,24 +79,41 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+          className="border-t mt-8 pt-8"
         >
-          <p className="text-muted-foreground text-sm">
-            © 2025 MASC. Всі права захищені.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link
-              href="/privacy"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Політика конфіденційності
-            </Link>
-            <Link
-              href="/terms"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Умови використання
-            </Link>
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+            {/* Copyright and legal info */}
+            <div className="flex flex-col space-y-3 text-sm text-muted-foreground max-w-2xl">
+              <p className="font-medium">
+                © 2025 MASC School. Усі права захищено.
+              </p>
+              <div className="space-y-1 text-xs leading-relaxed">
+                <p>ФОП Ковальчук Ярослава Василівна</p>
+                <p>ІПН: 3451315569</p>
+                <p>с. Ришавка, вул. Партизанів-Наумівців, 28</p>
+                <p>Коростенський район, Житомирська область</p>
+              </div>
+              <p className="text-xs leading-relaxed">
+                Цей сайт працює за договором комерційної концесії (франшизи) з
+                правовласником бренду MASC — ФОП Слободянюк М.В.
+              </p>
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 lg:ml-6">
+              <Link
+                href="/privacy"
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+              >
+                Політика конфіденційності
+              </Link>
+              <Link
+                href="/terms"
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+              >
+                Умови використання
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>

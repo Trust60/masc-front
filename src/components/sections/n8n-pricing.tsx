@@ -14,19 +14,17 @@ import { ContactFormDialog } from "@/components/ui/contact-form-dialog";
 const pricingPlans = [
   {
     name: "ЗНАННЯ",
-    price: "1700 грн/міс",
-    fullPrice: "17170 грн повна ціна",
+    price: "397",
     features: [
       "Доступ до курсу 24/7 на рік",
       "Запис Q&A сесій",
-      "Проект у портфоліо",
+      "Проєкт у портфоліо",
     ],
     popular: false,
   },
   {
     name: "ДОСВІД",
-    price: "2400 грн/міс",
-    fullPrice: "23660 грн повна ціна",
+    price: "547",
     features: [
       "Все з тарифу ЗНАННЯ",
       "Доступ до закритої групи студентів",
@@ -39,16 +37,14 @@ const pricingPlans = [
     popular: true,
   },
   {
-    name: "РЕЗУЛЬТАТ",
-    price: "5200 грн/міс",
-    fullPrice: "51770 грн повна ціна",
+    name: "МАСТЕРМАЙНД",
+    price: "897",
     features: [
       "Все з тарифу ДОСВІД",
-      "5 індивідуальних сесій протягом 2-х місяців",
-      "Технічна підтримка під час взяття першого проекту",
-      "Прокачка профілю на Upwork за унікальною методикою від школи",
+      "5 групових сесій з ментором",
+      "1 сесія з коучем",
       "3 місяці доступу до клубу англійської",
-      "7 шаблонів популярних AI-агентів для N8N",
+      "5 шаблонів популярних AI-агентів для N8N",
     ],
     popular: false,
   },
@@ -99,10 +95,11 @@ export function N8NPricing() {
                   <CardTitle className="text-2xl">{plan.name}</CardTitle>
                   <div className="mt-4">
                     <div className="text-3xl font-bold text-gradient-orange">
-                      {plan.price}
+                      ${plan.price}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      {plan.fullPrice}
+                      вартість в грн: {(Number(plan.price) * 43.5).toFixed(0)}{" "}
+                      грн
                     </div>
                   </div>
                 </CardHeader>
